@@ -2,8 +2,8 @@ import { useState, useMemo, useEffect } from "react";
 import { createClient } from "@supabase/supabase-js";
 
 // ── SUPABASE ──────────────────────────────────────────────────────────────────
-const SUPA_URL = "https://ojlxpobrkslaqxafpbqu.supabase.co";
-const SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9qbHhwb2Jya3NsYXF4YWZwYnF1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzMzNzM4OTQsImV4cCI6MjA4ODk0OTg5NH0.W6nTRkq-TKRo_O8jTkyQGgolQCF2DzHu3Cn-KM2e0aI";
+const SUPA_URL = "https://keebrlxssxatzbhvhdwe.supabase.co";
+const SUPA_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtlZWJybHhzc3hhdHpiaHZoZHdlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQxNTMyNzcsImV4cCI6MjA4OTcyOTI3N30.ckti5flVQJ1vy7RtwRy65iRohUrIi0_8AvWtHJ6AHj8";
 const db = createClient(SUPA_URL, SUPA_KEY);
 
 const toCamel = r => { if (!r) return r; const o = {}; for (const k in r) o[k.replace(/_([a-z])/g, (_, c) => c.toUpperCase())] = r[k]; return o; };
